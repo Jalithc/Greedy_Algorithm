@@ -1,34 +1,40 @@
 # Greedy_algorithm
 
-This simple C program calculates the minimum number of coins needed to provide change for a given amount in cents. It is designed as part of the CS50 course.
-
-## Table of Contents
-
-- [Overview](#overview)
-- [Usage](#usage)
-- [Functions](#functions)
-- [How to Contribute](#how-to-contribute)
-- [License](#license)
+This C program calculates the minimum number of coins needed to provide change for a given amount in cents. It is designed as part of the CS50 course.
 
 ## Overview
 
-This program prompts the user to input the amount of change owed in cents and then calculates the optimal distribution of quarters, dimes, nickels, and pennies to make up that change. The total number of coins needed is then printed.
+This program is a simple change calculator that helps determine the optimal distribution of quarters, dimes, nickels, and pennies for a specified amount of change in cents. The code is designed to be educational and part of the CS50 curriculum.
 
-### Individual Functions
+### How It Works
 
-1. **get_cents():**
-   - Prompts the user to input the amount of change owed in cents using `get_int` from the CS50 library.
+1. **User Input:**
+   - The program starts by prompting the user to input the amount of change owed in cents using the `get_cents` function.
 
-2. **Coin Calculation Functions:**
-   - `calculate_quarters(cents)`
-   - `calculate_dimes(cents)`
-   - `calculate_nickels(cents)`
-   - `calculate_pennies(cents)`
-   - Each function takes the remaining cents as input and calculates the number of respective coins needed (quarters, dimes, nickels, or pennies) by dividing the remaining cents by the value of the coin.
+2. **Coin Calculation:**
+   - It then calculates the number of quarters, dimes, nickels, and pennies using separate functions (`calculate_quarters`, `calculate_dimes`, `calculate_nickels`, `calculate_pennies`). Each function calculates the number of coins of a specific denomination based on the remaining cents.
 
-## Usage
+3. **Output:**
+   - The total number of coins needed is then printed, providing the minimum number of coins required to make up the given change.
 
-1. Clone the repository to your local machine.
-   ```bash
-   git clone <repository-url>
+### Functions
 
+#### `get_cents()`
+
+Prompts the user to input the amount of change owed in cents using `get_int` from the CS50 library.
+
+#### `calculate_quarters(int cents)`
+
+Calculates the number of quarters needed based on the remaining cents.
+
+#### `calculate_dimes(int cents)`
+
+Calculates the number of dimes needed based on the remaining cents.
+
+#### `calculate_nickels(int cents)`
+
+Calculates the number of nickels needed based on the remaining cents.
+
+#### `calculate_pennies(int cents)`
+
+Calculates the number of pennies needed based on the remaining cents.
