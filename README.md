@@ -1,10 +1,10 @@
 # Greedy_algorithm
 
-This C program calculates the minimum number of coins needed to provide change for a given amount in cents. It is designed as part of the CS50 course.
+This C program calculates the minimum number of coins needed to provide change for a given amount in cents.
 
 ## Overview
 
-This program is a simple change calculator that helps determine the optimal distribution of quarters, dimes, nickels, and pennies for a specified amount of change in cents. The code is designed to be educational and part of the CS50 curriculum.
+This program is a simple change calculator that helps determine the optimal distribution of quarters, dimes, nickels, and pennies for a specified amount of change in cents.
 
 ### How It Works
 
